@@ -1,0 +1,12 @@
+---
+layout:default
+title:my blog
+---
+{{page.title}}
+
+the lastest article
+
+{%for post in site.posts%}
+{{post.date|date_to_string}}{{post.title}}
+{%endfor%}
+
